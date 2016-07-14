@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Q9g-8z-r79">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="Ndt-Ld-6se">
+            <objects>
+                <collectionViewController id="Q9g-8z-r79" customClass="CollectionViewController" customModule="ZCJWebImage" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="PNi-5r-wQe">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kM4-NS-7ZA">
+                            <size key="itemSize" width="207" height="170"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionViewCell" id="Yj7-wf-5Nf">
+                                <rect key="frame" x="0.0" y="74" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="207" height="170"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="101" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bua-a1-heH">
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="bua-a1-heH" secondAttribute="trailing" id="082-ci-9Gh"/>
+                                    <constraint firstItem="bua-a1-heH" firstAttribute="top" secondItem="Yj7-wf-5Nf" secondAttribute="top" id="5L0-PM-qLZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="bua-a1-heH" secondAttribute="trailing" id="9Iq-bx-SDc"/>
+                                    <constraint firstAttribute="bottom" secondItem="bua-a1-heH" secondAttribute="bottom" id="Fc9-Ja-fsE"/>
+                                    <constraint firstItem="bua-a1-heH" firstAttribute="top" secondItem="Yj7-wf-5Nf" secondAttribute="top" id="KNd-h2-9Yn"/>
+                                    <constraint firstAttribute="bottom" secondItem="bua-a1-heH" secondAttribute="bottom" id="Nn5-NC-4tc"/>
+                                    <constraint firstItem="bua-a1-heH" firstAttribute="leading" secondItem="Yj7-wf-5Nf" secondAttribute="leading" id="T1e-By-RKU"/>
+                                    <constraint firstItem="bua-a1-heH" firstAttribute="leading" secondItem="Yj7-wf-5Nf" secondAttribute="leading" id="t8M-br-1mM"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="082-ci-9Gh"/>
+                                        <exclude reference="5L0-PM-qLZ"/>
+                                        <exclude reference="Nn5-NC-4tc"/>
+                                        <exclude reference="t8M-br-1mM"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="082-ci-9Gh"/>
+                                        <include reference="5L0-PM-qLZ"/>
+                                        <exclude reference="9Iq-bx-SDc"/>
+                                        <exclude reference="Fc9-Ja-fsE"/>
+                                        <exclude reference="KNd-h2-9Yn"/>
+                                        <include reference="Nn5-NC-4tc"/>
+                                        <exclude reference="T1e-By-RKU"/>
+                                        <include reference="t8M-br-1mM"/>
+                                    </mask>
+                                </variation>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Q9g-8z-r79" id="GHk-Cr-hvI"/>
+                            <outlet property="delegate" destination="Q9g-8z-r79" id="lmo-xG-JKh"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NRp-Qh-99I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619.5" y="118"/>
+        </scene>
+    </scenes>
+</document>
